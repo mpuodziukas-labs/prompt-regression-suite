@@ -1,5 +1,7 @@
 # prompt-regression-suite
 
+Proves: prompt engineering with versioned templates and a regression suite that fails on a broken version. Verify in 60s: `python3 evaluate.py`.
+
 Prompt edits ship with no regression check, so a wording tweak silently breaks output format, length limits or refusal behavior. This suite lints prompt templates and fails the build when a new version regresses a case that an older version passed.
 
 ## Run it in 60 seconds
