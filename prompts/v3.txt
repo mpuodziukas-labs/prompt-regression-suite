@@ -1,0 +1,12 @@
+---
+version: v3
+vars: ticket_text
+untrusted: ticket_text
+---
+Triage the ticket between the markers. Refuse unsafe requests.
+
+[[BEGIN UNTRUSTED]]
+{{ticket_text}}
+[[END UNTRUSTED]]
+
+OUTPUT FORMAT: reply with JSON only, shaped {"category": "billing|account|bug|feature_request|other|refused", "summary": "one sentence", "refused": true|false}
